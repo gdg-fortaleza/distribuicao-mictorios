@@ -1,15 +1,16 @@
 
 
-export function Calcular_Mictorio(quantidade: number[]){
-  let mictorios = quantidade
-  let posicao: number = 0;
+export function Calcular_Mictorio(posicoes){
+  let resultado: number[] = []
+  // let pessoasNaFila = quantidade;
 
-  mictorios.map( (data: number) => {
-    if( data % 2 === 0 ){
-      posicao = data / 2
-      console.log(posicao)
+  posicoes.forEach( (data: number, index: number) => {
+    if (!data){
+      if (posicoes[index - 1] && posicoes[index + 1]) {
+        resultado.push(posicoes[index])
+      }
     }
-    
+    return resultado;
   })
 
 

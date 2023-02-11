@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "test": "jest --watch"
+    "test": "jest --watchAll"
   },
   "devDependencies": {
     "@types/jest": "^29.4.0",
